@@ -1,0 +1,97 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.tasks {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-direction: column;
+  height: 280px;
+  justify-content: space-between;
+}
+
+.filterWrap {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.filter {
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background-color: #7AB1FF;
+  border-radius: 10px;
+  transition: .1s ease-out;
+  outline: 1px solid white;
+  user-select: none;
+}
+
+.filterActive {
+  background-color: #64C7FF;
+}
+
+.taskWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  flex-grow: 1;
+  column-gap: 10px;
+  row-gap: 5px;
+  margin-bottom: 5px;
+}
+
+.taskTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.taskRight {
+  display: flex;
+  column-gap: 10px;
+}
+
+.taskPriority {
+  padding: 2px 4px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskPriorityLow {
+  background-color: rgba(206, 255, 157, 0.5);
+}
+
+.taskPriorityMiddle {
+  background-color: rgba(100, 199, 255, 0.5);
+}
+
+.taskPriorityHigh {
+  background-color: rgba(255, 117, 107, 0.5);
+}
+
+.delete {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background-color: #ff8b7b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.1s ease-in-out;
+}
+
+.delete:hover {
+  box-shadow: 1px 1px 5px #ff8b7b;
+}

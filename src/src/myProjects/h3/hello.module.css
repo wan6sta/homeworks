@@ -1,0 +1,115 @@
+.hello {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  position: relative;
+}
+
+.enter {
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+.enter > input {
+  transition: 0.2s ease-in-out;
+  height: 30px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: #c5ff95;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.enter > button {
+  user-select: none;
+  transition: 0.2s ease-in-out;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #a663ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.enter > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  color: white;
+  font-weight: 600;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #a663ff;
+}
+
+.buttonDisable {
+  background-color: rgba(166, 99, 255, 0.7) !important;
+}
+
+.error {
+  background-color: rgba(255, 137, 137, 0.7) !important;
+}
+
+.spanError {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  font-size: 14px;
+  color: #ff8b7b;
+}
+
+.modalMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s ease;
+  position: absolute;
+  z-index: 9;
+  opacity: 1;
+  top: 0;
+  right: 0;
+  transform: scale(1);
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalHello {
+  background-color: #a663ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100px;
+  z-index: 99;
+}
+
+.modalSpan {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.modalHidden {
+  transition: 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 9;
+  transform: scale(0);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
